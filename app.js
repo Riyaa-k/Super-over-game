@@ -26,7 +26,7 @@ function gameOver(){
   if(team2Score>team1Score) alert("Pak Wins");
   if(team1Score==team2Score) alert("Super over!");
 }
-// console.log(team1Score);
+
 function updateScore(){
   
   $team1Score.innerHTML=team1Score;
@@ -39,7 +39,7 @@ resetButton.onclick=()=>{
   window.location.reload();
   console.log("reloaded");
 };
-//.log(turn);
+
 
 strikeButton.onclick=()=>{
   strikeAudio.pause();
@@ -69,7 +69,7 @@ strikeButton.onclick=()=>{
 
   if(turn==1){
     team1BallsFaced++;
-    //console.log(team1BallsFaced);
+    
     document.querySelector(
       `#team1-superover div:nth-child(${team1BallsFaced})`
     ).textContent=randomElement;
